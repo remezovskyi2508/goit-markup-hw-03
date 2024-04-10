@@ -6,9 +6,7 @@ body {
   letter-spacing: 0.02em;
   color: #434455;
   background-color: #fff;
-  width: 100%;
   margin: 0;
-  overflow-y: hidden;
 }
 
 h1 {
@@ -26,6 +24,7 @@ h2 {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
+  margin: 0 0 72px;
 }
 
 h3 {
@@ -33,6 +32,7 @@ h3 {
   font-size: 20px;
   line-height: 1.2;
   color: #2e2f42;
+  margin: 0;
 }
 
 ul {
@@ -45,16 +45,20 @@ a {
   box-sizing: border-box;
 }
 
+p {
+  margin: 0;
+}
 .container {
-  display: flex;
-  max-width: 100%;
-  margin: 0 16px;
+  width: 1158px;
+  margin: 0 auto;
 }
 
-.features {
+.head-nav {
+  display: flex;
+  align-items: center;
   justify-content: space-between;
-  margin-top: 24px;
-  margin-bottom: 24px;
+  padding: 24px 15px;
+  border-bottom: 1px solid black;
 }
 
 .navigator {
@@ -114,6 +118,10 @@ a {
   color: #404bbf;
 }
 
+main {
+  flex-grow: 1;
+}
+
 .heroes {
   background-color: #2e2f42;
   overflow: hidden;
@@ -137,6 +145,8 @@ a {
   font-weight: 500;
   letter-spacing: 0.04em;
   color: #fff;
+  padding: 16px 19px;
+  border-radius: 4px;
   background-color: #4d5ae5;
   cursor: pointer;
   display: block;
@@ -147,13 +157,27 @@ a {
 .btn-order:focus {
   background: #404bbf;
 }
-
+.section_2 {
+  margin: 0 auto;
+}
 .hidden-header {
   letter-spacing: 0.02em;
+  display: none;
+}
+
+.advantages-list {
+  display: flex;
+  gap: 24px;
+  margin: 120px 15px;
+}
+
+.advantages-card {
+  width: 264px;
 }
 
 .name-block {
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 
 .header-team {
@@ -162,10 +186,17 @@ a {
 
 .team-wrapper {
   background-color: #f4f4fd;
+  padding: 120px 0;
 }
 
 .team-info {
-  text-align: center;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+
+.team-img{
+  margin-bottom: 32px;
 }
 
 .team-card {
