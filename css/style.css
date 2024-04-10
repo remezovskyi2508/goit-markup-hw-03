@@ -48,6 +48,7 @@ a {
 p {
   margin: 0;
 }
+
 .container {
   width: 1158px;
   margin: 0 auto;
@@ -122,6 +123,14 @@ main {
   flex-grow: 1;
 }
 
+.section {
+  padding: 120px 0;
+}
+
+.section .heroes {
+  background-color: #2e2f42;
+}
+
 .heroes {
   background-color: #2e2f42;
   overflow: hidden;
@@ -129,13 +138,15 @@ main {
 
 .heroes-wrap {
   max-width: 496px;
-  margin: 188px auto;
+  margin: 68px auto;
 }
 
 .heroes-name {
   text-align: center;
   color: #fff;
   margin-bottom: 48px;
+  width: 100%;
+  index: 25;
 }
 
 .btn-order {
@@ -157,9 +168,7 @@ main {
 .btn-order:focus {
   background: #404bbf;
 }
-.section_2 {
-  margin: 0 auto;
-}
+
 .hidden-header {
   letter-spacing: 0.02em;
   display: none;
@@ -168,11 +177,12 @@ main {
 .advantages-list {
   display: flex;
   gap: 24px;
-  margin: 120px 15px;
+  justify-content: space-between;
+  margin: 0 15px;
 }
 
 .advantages-card {
-  width: 264px;
+  max-width: 264px;
 }
 
 .name-block {
@@ -195,15 +205,30 @@ main {
   justify-content: center;
 }
 
-.team-img{
+.team-card {
+  background-color: #ffffff;
+  text-align: center;
+  border-radius: 0 0 4px 4px;
+  padding-bottom: 32px;
+}
+
+.team-img {
   margin-bottom: 32px;
 }
 
-.team-card {
-  background-color: #ffffff;
+.portfolio-img {
+  overflow: hidden;
+  vertical-align: bottom;
 }
 
-.header-portfolio {
+.portfolio-card {
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
+  padding: 32px 16px;
+}
+
+.portfolio-header {
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -212,8 +237,21 @@ main {
   color: #2e2f42;
 }
 
-.footer-wrapper {
+.portfolio-item {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 15px;
+  gap: 24px;
+}
+
+.footer {
   background-color: #2e2f42;
+  padding: 100px 0;
+}
+
+.footer-wrap {
+  max-width: 264px;
+  margin: 0 15px;
 }
 
 .footer-logo-web {
