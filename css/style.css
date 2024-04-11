@@ -259,14 +259,15 @@ main {
 .portfolio-item {
   display: flex;
   flex-wrap: wrap;
+  column-gap: 24px;
 }
 
 .portfolio-item li {
-  margin-right: 24px;
+  margin-bottom: 24px;
 }
 
 .portfolio-item li:nth-child(3n + 3) {
-  margin-right: 0;
+  margin-bottom: 0;
 }
 
 .portfolio-list {
